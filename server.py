@@ -15,6 +15,7 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 app = FastAPI()
+handler = app
 
 # Разрешаем сайту на Гитхабе слать данные на наш сервер без блокировок
 app.add_middleware(
